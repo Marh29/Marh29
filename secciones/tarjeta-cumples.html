@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marh</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="icon" type="icon/svg" href="iconos/M.svg">
+	<style type="text/css">
+		div.galeria
+		{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-auto-rows: 480px;
+			padding: 0px;
+			gap: 25px;
+
+			margin-right: auto;
+			margin-left: auto;
+			width: 80%;
+			background: ;
+		}
+		video, iframe
+		{
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		div.photo
+		{
+			display: flex;
+			justify-content: center;		
+		}
+		div.photo:nth-child(1)
+		{
+			grid-row-start: span 2;
+		}
+		div.photo:nth-child(2)
+		{		
+			grid-row-start: span 2;
+		}
+@media screen and (max-width: 600px)
+{
+	body
+	{
+		background: ;
+	}
+			div.galeria
+		{
+			grid-template-columns: repeat(2, 1fr);
+			grid-auto-rows: 200px;
+			padding: 0px;
+			margin: 5px;
+			gap: 10px;
+
+			width: 100%;
+			background: ;
+		}
+	</style>
+</head>
+<body>
+<!-- Cabecera -->
+
+	<div class="cabeza">
+		<center>
+			<a href="../inicio.html"><img class="nombre" src="iconos/Marh.svg"></a>
+		</center>
+	</div>
+
+<!-- Contenido -->
+<br><br><br><br>
+<center><h1>Tarjeta de Cumpleaños</h1></center>
+
+	<div class="galeria">
+		
+		<div class="photo">
+			<iframe src="https://onedrive.live.com/embed?cid=90FBBCD656E1C4C7&resid=90FBBCD656E1C4C7%21817&authkey=AG5AGp6gD15D_O4" width="180" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+		</div>
+
+		<div class="photo">
+			<iframe src="https://onedrive.live.com/embed?cid=90FBBCD656E1C4C7&resid=90FBBCD656E1C4C7%21816&authkey=AH-KXF65rJwQAtg" frameborder="0" scrolling="no" allowfullscreen></iframe>
+		</div>
+	</div>
+
+<br>
+
+<!-- Pie de pagina -->
+
+	<div class="pie">
+		<div>
+		<center>
+		<b><p class="contacto" >Contacto</p></b>
+		<p class="contacto" >Intagram: <a class="contacto"target="_blank" href="https://www.instagram.com/marh.teo/">@marh.teo</a></p>
+		<p class="contacto" >Twitter: <a class="contacto"target="_blank" href="https://twitter.com/MarhTeo">@MarhTeo</a></p>
+		</center>		
+		</div>
+	</div>
+
+</body>
+</html>

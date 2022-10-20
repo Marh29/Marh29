@@ -1,0 +1,154 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: rgb(249, 249, 249);
+	font-family: Quicksand Medium, Arial, Inter, Roboto;
+}
+
+/* Cabecera */
+div.cabeza
+{
+	background: white;
+	height: 68px;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	position: fixed;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	z-index: 5;
+}
+img.nombre
+{
+	height: 40px;
+	width: auto;
+}
+
+/* Contenido */
+div.contenedor
+{
+	overflow: hidden;
+	width: 1000px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px	;	
+	box-shadow: 0px 5px 10px;
+	background: white;
+}
+div.texto
+{
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+}
+div.fotos
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+div.fotos:before
+{
+	content: "";
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: linear-gradient(90deg, white 0%, rgba(0, 0, 0, 0) 5%);
+}
+div.texto, div.fotos, div.fotos:before
+{
+	width: 500px;
+	height: 500px;
+	float: left;
+	box-sizing: border-box;
+}
+p
+{
+	padding: 0;
+	margin: 0;
+}
+p.titulo
+{
+	font-size: 45px;
+	box-sizing: border-box;
+}
+p.enlace
+{
+	font-size: 20px;
+	box-sizing: border-box;			
+}
+img
+{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+img.alta
+{
+	width: auto;
+	height: 100%;
+}
+a:link, a:hover, a:visited
+{
+	color:black;
+}
+
+/* Pie de pagina */
+div.pie
+{
+	background: black;
+	color: white;
+	width: 100%;
+	height: 80px;
+	display: grid;
+	place-items: center;
+	vertical-align: center;
+}
+a.contacto:link, a.contacto:hover, a.contacto:visited
+{
+	color:white;
+}
+
+/* Tamaño telefono */
+@media screen and (max-width: 600px)
+{
+
+/* Contenido */
+div.contenedor
+{
+	width: 100%;
+	height: 500px;
+}
+div.fotos:before
+{
+	background: linear-gradient(white 0%, rgba(0, 0, 0, 0) 5%);
+}
+div.texto
+{
+	padding-left: 20px;
+}
+div.texto
+{
+	width: 100%;
+	height: 40%;
+}
+div.fotos, div.fotos:before
+	{
+	width: 100%;
+	height: 60%;
+}
+p.titulo
+{
+	font-size: 30px;
+}
+p.enlace
+{
+	font-size: 20px;
+}
+
+}
