@@ -108,6 +108,9 @@ div.pie
 	display: grid;
 	place-items: center;
 	vertical-align: center;
+	
+	position: absolute;
+	bottom: 0 auto;
 }
 a.contacto:link, a.contacto:hover, a.contacto:visited
 {
